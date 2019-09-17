@@ -1,0 +1,1620 @@
+/*for min-width: 1050px display*/
+@media only screen and (min-width: 1100px) {
+* 
+{
+	padding: 0;
+	margin:0;
+}
+
+html
+{
+	width: 100%
+	height: 100%;
+}
+
+body
+{
+	/* Background pattern from Toptal Subtle Patterns */
+	background-image: url("img/hotel-wallpaper-black.png");
+	color: #ffffff;
+	margin: 0 auto !important; 
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;	
+	font-weight: 400;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+} 
+
+
+/*header-------*/
+header
+{
+	width: 100%; 
+	margin: 0;
+}
+
+.logo
+{
+	height: 20%;
+	position: relative;
+	width: 100%;
+}
+
+.logo img
+{
+	height: 100%;
+	width: 100%;
+}
+
+.logoh1
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	background:  rgba(0, 0, 0, 0.5);
+	letter-spacing: 0.3em;
+	padding: 0.5%;
+	border-radius: 5px;
+}
+
+h1
+{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	text-shadow:
+	0.1em 0.1em #103aa1;
+}
+
+#topnav
+{
+	width: 100%;
+	padding: 0.5% 0;
+	background-color: #426dd4;
+	text-align: center;
+	border-top: 0.2em solid #315cc3;
+	border-bottom: 0.2em solid #315cc3;
+}
+
+.menu /*które znajduje się w topnav czyli lista ul*/
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	display: inline-block; /*mówi aby elementy zachowywały się jak blok, wóczas te elemnty przyjmują text align center z nav*/
+}
+
+.menu a
+{
+	text-decoration: none;
+	color: #fff;
+	display: block; 
+	/*zachowuj się jak block, aby nadać szerokość, wyskość, w tym wypadku nadałam taką samą jak li*/	
+}
+
+.menu > li:hover /*dajemy li dlatego że kolor zmienia się jak najedziemy na li, niekoniecznie na hipełącze, hiperłącze to tak po drodze, dlatego ważne żeby też to hiperłącze miało odpowiednią wyskośc itd.*/
+{
+	background-color: #204bb2;
+}
+
+.menu > li:hover > a
+{
+	color: black;
+}
+
+.menu > li
+{
+	float: left;
+	width: 150px;
+	height: 30px;
+	border-right: 3px dashed #315cc3;
+}
+
+.menu > li:first-child
+{
+	border-left: 3px dashed #315cc3;
+}
+
+.undermenu
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: none; /*schowaj liste*/
+}
+
+.menu > li:hover > .undermenu
+{
+	display: block;
+}
+
+.undermenu > li
+{
+	background-color: #537ee5;
+	position: relative;
+	z-index: 100;
+	border-top: 3px dashed #426dd4;
+}
+
+.undermenu > li:hover
+{
+	background-color: black;
+}
+
+.undermenu > li:hover > a
+{
+	color: #426dd4;
+}
+
+.undermenu > li > a:
+{
+	text-align: justify;
+}
+/*container---------*/
+.container
+{
+	width: 1050px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.leftside
+{
+	float:left;
+	width: 85%;
+}
+
+	.article1
+	{
+		background-color: black;
+		padding: 3%;
+	}
+
+	.article1 img
+	{
+		float:left;
+		margin-right: 3%;
+	}
+
+	.article2
+	{
+		background-color: black;
+		border-top: 2px solid gray;
+	}
+	.nexttonaruto
+	{
+		text-align: justify;
+	}
+
+	p
+	{
+		margin: 0;
+	}
+
+	section
+	{
+		padding: 2%;
+	}
+
+	section img
+	{
+		float:left;
+		padding-right: 2%;
+		border-radius: 50px;
+	}
+
+	.content > p
+	{
+		margin: 0;
+	}
+	h2
+	{
+		margin: 0;
+		text-align: center;		
+	}
+
+	.cel
+	{
+		margin: 0;
+		text-align: center;
+		padding-bottom: 3%;
+		font-weight: 600;	
+	}
+
+.rightside
+{
+	float:left;
+	width: 15%;
+}
+
+	ul
+	{
+		margin: 0;
+	}
+
+	.przyklady
+	{
+		background-color: black;
+		padding: 10% 5% 5% 15%;
+		margin-left: 10%;
+	}
+
+	.powiazanewpisy
+	{
+		background-color: black;
+		border-top: 2px solid gray;
+		padding: 10% 5% 5% 15%;
+		margin-left: 10%;
+	}
+
+	.reklama
+	{
+		margin-left: 10%;
+	}
+
+	h5
+	{
+		margin: 0;
+		padding: 0;
+	}
+
+/*footer------*/
+footer
+{
+	background-color: black;
+	text-align: center;
+	border-top: 2px solid gray;
+	width: 100%;
+}
+
+.socials
+{
+	display: inline-block;
+	width: 80%;
+}
+
+.socials a
+{
+	text-decoration: none;
+	color: white;
+}
+
+.fb
+{
+	float:left;
+	width: 25%;
+	height: 25%;
+}
+
+.fb:hover
+{
+	background-color: #3b5998;
+}
+
+.yt
+{
+	float:left;
+	width: 25%;
+	height: 25%;
+}
+
+.yt:hover
+{
+	background-color: #ff0000;
+}
+
+.gplus
+{
+	float:left;
+	width: 25%;
+	height: 25%;
+}
+
+.gplus:hover
+{
+	background-color: CC3333;
+}
+
+.twitter
+{
+	float:left;
+	width: 25%;
+	height: 25%;
+}
+
+.twitter:hover
+{
+	background-color: #00acee;
+}
+
+.ending
+{
+	text-align: center;
+	font-size: 14px;
+	padding: 2px 0 2px 0;
+	background-color: gray;
+
+}
+}
+
+/*for tablets 950px, horizontal orientation*/
+@media only screen and (max-width: 1100px) and (min-width: 1000px) {
+* 
+{
+	padding: 0;
+	margin:0;
+}
+
+html
+{
+	width: 100%
+	height: 100%;
+}
+
+body
+{
+	/* Background pattern from Toptal Subtle Patterns */
+	background-image: url("img/hotel-wallpaper-black.png");
+	color: #ffffff;
+	margin: 0 auto !important; 
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;	
+	font-weight: 400;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+} 
+
+
+/*header-------*/
+header
+{
+	width: 100%; 
+	margin: 0;
+}
+
+.logo
+{
+	height: 20%;
+	position: relative;
+	width: 100%;
+}
+
+.logo img
+{
+	height: 100%;
+	width: 100%;
+}
+
+.logoh1
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	background:  rgba(0, 0, 0, 0.5);
+	letter-spacing: 0.3em;
+	padding: 0.5%;
+	border-radius: 5px;
+}
+
+h1
+{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	text-shadow:
+	0.1em 0.1em #103aa1;
+}
+
+#topnav
+{
+	width: 100%;
+	padding: 0.5% 0;
+	background-color: #426dd4;
+	text-align: center;
+	border-top: 0.2em solid #315cc3;
+	border-bottom: 0.2em solid #315cc3;
+}
+
+.menu /*które znajduje się w topnav czyli lista ul*/
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	display: inline-block; /*mówi aby elementy zachowywały się jak blok, wóczas te elemnty przyjmują text align center z nav*/
+}
+
+.menu a
+{
+	text-decoration: none;
+	color: #fff;
+	display: block; 
+	/*zachowuj się jak block, aby nadać szerokość, wyskość, w tym wypadku nadałam taką samą jak li*/	
+}
+
+.menu > li:hover /*dajemy li dlatego że kolor zmienia się jak najedziemy na li, niekoniecznie na hipełącze, hiperłącze to tak po drodze, dlatego ważne żeby też to hiperłącze miało odpowiednią wyskośc itd.*/
+{
+	background-color: #204bb2;
+}
+
+.menu > li:hover > a
+{
+	color: black;
+}
+
+.menu > li
+{
+	float: left;
+	width: 150px;
+	height: 30px;
+	border-right: 3px dashed #315cc3;
+}
+
+.menu > li:first-child
+{
+	border-left: 3px dashed #315cc3;
+}
+
+.undermenu
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: none; /*schowaj liste*/
+}
+
+.menu > li:hover > .undermenu
+{
+	display: block;
+}
+
+.undermenu > li
+{
+	background-color: #537ee5;
+	position: relative;
+	z-index: 100;
+	border-top: 3px dashed #426dd4;
+}
+
+.undermenu > li:hover
+{
+	background-color: black;
+}
+
+.undermenu > li:hover > a
+{
+	color: #426dd4;
+}
+
+.undermenu > li > a:
+{
+	text-align: justify;
+}
+/*container---------*/
+.container
+{
+	width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.leftside
+{
+	float:left;
+	width: 85%;
+}
+
+	.article1
+	{
+		background-color: black;
+		padding: 3%;
+	}
+
+	.article1 img
+	{
+		float:left;
+		margin-right: 3%;
+	}
+
+	.article2
+	{
+		background-color: black;
+		border-top: 2px solid gray;
+	}
+	.nexttonaruto
+	{
+		text-align: justify;
+	}
+
+	p
+	{
+		margin: 0;
+	}
+
+	section
+	{
+		padding: 2%;
+	}
+
+	section img
+	{
+		float:left;
+		padding-right: 2%;
+		border-radius: 50px;
+	}
+
+	.content > p
+	{
+		margin: 0;
+	}
+	h2
+	{
+		margin: 0;
+		text-align: center;		
+	}
+
+	.cel
+	{
+		margin: 0;
+		text-align: center;
+		padding-bottom: 3%;
+		font-weight: 600;	
+	}
+
+.rightside
+{
+	display: none;
+}
+
+/*footer------*/
+footer
+{
+	background-color: black;
+	text-align: center;
+	border-top: 2px solid gray;
+	width: 100%;
+}
+
+.socials
+{
+	display: inline-block;
+	width: 80%;
+}
+
+.socials a
+{
+	text-decoration: none;
+	color: white;
+}
+
+.fb
+{
+	float:left;
+	width: 25%;
+	height: 25%;
+}
+
+.fb:hover
+{
+	background-color: #3b5998;
+}
+
+.yt
+{
+	float:left;
+	width: 25%;
+	height: 25%;
+}
+
+.yt:hover
+{
+	background-color: #ff0000;
+}
+
+.gplus
+{
+	float:left;
+	width: 25%;
+	height: 25%;
+}
+
+.gplus:hover
+{
+	background-color: CC3333;
+}
+
+.twitter
+{
+	float:left;
+	width: 25%;
+	height: 25%;
+}
+
+.twitter:hover
+{
+	background-color: #00acee;
+}
+
+.ending
+{
+	text-align: center;
+	font-size: 14px;
+	padding: 2px 0 2px 0;
+	background-color: gray;
+
+}
+
+
+}
+
+/*for tablets 750px, vertical orientation*/
+@media only screen and (max-width: 1000px) and (min-width: 800px) {
+
+* 
+{
+	padding: 0;
+	margin:0;
+}
+
+html
+{
+	width: 100%
+	height: 100%;
+}
+
+body
+{
+	/* Background pattern from Toptal Subtle Patterns */
+	background-image: url("img/hotel-wallpaper-black.png");
+	color: #ffffff;
+	margin: 0 auto !important; 
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;	
+	font-weight: 400;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+} 
+
+
+/*header-------*/
+header
+{
+	width: 100%; 
+	margin: 0;
+}
+
+.logo
+{
+	height: 20%;
+	position: relative;
+	width: 100%;
+}
+
+.logo img
+{
+	height: 100%;
+	width: 100%;
+}
+
+.logoh1
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	background:  rgba(0, 0, 0, 0.5);
+	letter-spacing: 0.3em;
+	padding: 0.5%;
+	border-radius: 5px;
+}
+
+h1
+{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	text-shadow:
+	0.1em 0.1em #103aa1;
+}
+
+#topnav
+{
+	width: 100%;
+	padding: 0.5% 0;
+	background-color: #426dd4;
+	text-align: center;
+	border-top: 0.2em solid #315cc3;
+	border-bottom: 0.2em solid #315cc3;
+}
+
+.menu /*które znajduje się w topnav czyli lista ul*/
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	display: inline-block; /*mówi aby elementy zachowywały się jak blok, wóczas te elemnty przyjmują text align center z nav*/
+}
+
+.menu a
+{
+	text-decoration: none;
+	color: #fff;
+	display: block; 
+	/*zachowuj się jak block, aby nadać szerokość, wyskość, w tym wypadku nadałam taką samą jak li*/	
+}
+
+.menu > li:hover /*dajemy li dlatego że kolor zmienia się jak najedziemy na li, niekoniecznie na hipełącze, hiperłącze to tak po drodze, dlatego ważne żeby też to hiperłącze miało odpowiednią wyskośc itd.*/
+{
+	background-color: #204bb2;
+}
+
+.menu > li:hover > a
+{
+	color: black;
+}
+
+.menu > li
+{
+	float: left;
+	width: 150px;
+	height: 30px;
+	border-right: 3px dashed #315cc3;
+}
+
+.menu > li:first-child
+{
+	border-left: 3px dashed #315cc3;
+}
+
+.undermenu
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: none; /*schowaj liste*/
+}
+
+.menu > li:hover > .undermenu
+{
+	display: block;
+}
+
+.undermenu > li
+{
+	background-color: #537ee5;
+	position: relative;
+	z-index: 100;
+	border-top: 3px dashed #426dd4;
+}
+
+.undermenu > li:hover
+{
+	background-color: black;
+}
+
+.undermenu > li:hover > a
+{
+	color: #426dd4;
+}
+
+.undermenu > li > a:
+{
+	text-align: justify;
+}
+/*container---------*/
+.container
+{
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.leftside
+{
+	float:left;
+	width: 85%;
+}
+
+	.article1
+	{
+		background-color: black;
+		padding: 3%;
+	}
+
+	.article1 img
+	{
+		float:left;
+		margin-right: 3%;
+	}
+
+	.article2
+	{
+		background-color: black;
+		border-top: 2px solid gray;
+	}
+	.nexttonaruto
+	{
+		text-align: justify;
+	}
+
+	p
+	{
+		margin: 0;
+	}
+
+	section
+	{
+		padding: 2%;
+	}
+
+	section img
+	{
+		float:left;
+		padding-right: 2%;
+		border-radius: 50px;
+	}
+
+	.content > p
+	{
+		margin: 0;
+	}
+	h2
+	{
+		margin: 0;
+		text-align: center;		
+	}
+
+	.cel
+	{
+		margin: 0;
+		text-align: center;
+		padding-bottom: 3%;
+		font-weight: 600;	
+	}
+
+.rightside
+{
+	display: none;
+}
+
+/*footer------*/
+footer
+{
+	background-color: black;
+	text-align: center;
+	border-top: 2px solid gray;
+	width: 100%;
+}
+
+.socials
+{
+	display: inline-block;
+	width: 80%;
+}
+
+.socials a
+{
+	text-decoration: none;
+	color: white;
+}
+
+.fb
+{
+	float:left;
+	width: 25%;
+	height: 25%;
+}
+
+.fb:hover
+{
+	background-color: #3b5998;
+}
+
+.yt
+{
+	float:left;
+	width: 25%;
+	height: 25%;
+}
+
+.yt:hover
+{
+	background-color: #ff0000;
+}
+
+.gplus
+{
+	float:left;
+	width: 25%;
+	height: 25%;
+}
+
+.gplus:hover
+{
+	background-color: CC3333;
+}
+
+.twitter
+{
+	float:left;
+	width: 25%;
+	height: 25%;
+}
+
+.twitter:hover
+{
+	background-color: #00acee;
+}
+
+.ending
+{
+	text-align: center;
+	font-size: 14px;
+	padding: 2px 0 2px 0;
+	background-color: gray;
+
+}
+
+
+}
+
+/*for phones 450px, horizontal orientation*/
+@media only screen and (max-width: 800px) and (min-width: 500px) {
+* 
+{
+	padding: 0;
+	margin:0;
+}
+
+html
+{
+	width: 100%
+	height: 100%;
+}
+
+body
+{
+	/* Background pattern from Toptal Subtle Patterns */
+	background-image: url("img/hotel-wallpaper-black.png");
+	color: #ffffff;
+	margin: 0 auto !important; 
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;	
+	font-weight: 400;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+} 
+
+
+/*header-------*/
+header
+{
+	width: 100%; 
+	margin: 0;
+}
+
+.logo
+{
+	height: 20%;
+	position: relative;
+	width: 100%;
+}
+
+.logo img
+{
+	height: 100%;
+	width: 100%;
+}
+
+.logoh1
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	background:  rgba(0, 0, 0, 0.5);
+	letter-spacing: 0.3em;
+	padding: 0.5%;
+	border-radius: 5px;
+}
+
+h1
+{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	text-shadow:
+	0.1em 0.1em #103aa1;
+}
+
+#topnav
+{
+	width: 100%;
+	padding: 0.5% 0;
+	background-color: #426dd4;
+	text-align: center;
+	border-top: 0.2em solid #315cc3;
+	border-bottom: 0.2em solid #315cc3;
+}
+
+.menu /*które znajduje się w topnav czyli lista ul*/
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	display: inline-block; /*mówi aby elementy zachowywały się jak blok, wóczas te elemnty przyjmują text align center z nav*/
+}
+
+.menu a
+{
+	text-decoration: none;
+	color: #fff;
+	display: block; 
+	/*zachowuj się jak block, aby nadać szerokość, wyskość, w tym wypadku nadałam taką samą jak li*/	
+}
+
+.menu > li:hover /*dajemy li dlatego że kolor zmienia się jak najedziemy na li, niekoniecznie na hipełącze, hiperłącze to tak po drodze, dlatego ważne żeby też to hiperłącze miało odpowiednią wyskośc itd.*/
+{
+	background-color: #204bb2;
+}
+
+.menu > li:hover > a
+{
+	color: black;
+}
+
+.menu > li
+{
+	float: none;
+	width: 150px;
+	height: 30px;
+
+}
+
+.undermenu
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: none; /*schowaj liste*/
+}
+
+.menu > li:hover > .undermenu
+{
+	display: block;
+}
+
+.undermenu > li
+{
+	background-color: #537ee5;
+	position: relative;
+	z-index: 100;
+	border-top: 3px dashed #426dd4;
+}
+
+.undermenu > li:hover
+{
+	background-color: black;
+}
+
+.undermenu > li:hover > a
+{
+	color: #426dd4;
+}
+
+.undermenu > li > a:
+{
+	text-align: justify;
+}
+/*container---------*/
+.container
+{
+	width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.leftside
+{
+	float:left;
+	width: 85%;
+}
+
+	.article1
+	{
+		background-color: black;
+		padding: 3%;
+	}
+
+	.article1 img
+	{
+		float:left;
+		margin-right: 3%;
+	}
+
+	.article2
+	{
+		background-color: black;
+		border-top: 2px solid gray;
+	}
+	.nexttonaruto
+	{
+		text-align: justify;
+	}
+
+	p
+	{
+		margin: 0;
+	}
+
+	section
+	{
+		padding: 2%;
+	}
+
+	section img
+	{
+		float:left;
+		padding-right: 2%;
+		border-radius: 50px;
+	}
+
+	.content > p
+	{
+		margin: 0;
+	}
+	h2
+	{
+		margin: 0;
+		text-align: center;		
+	}
+
+	.cel
+	{
+		margin: 0;
+		text-align: center;
+		padding-bottom: 3%;
+		font-weight: 600;	
+	}
+
+.rightside
+{
+	display: none;
+}
+
+/*footer------*/
+footer
+{
+	background-color: black;
+	text-align: center;
+	border-top: 2px solid gray;
+	width: 100%;
+}
+
+.socials
+{
+	display: inline-block;
+	width: 80%;
+}
+
+.socials a
+{
+	text-decoration: none;
+	color: white;
+}
+
+.fb
+{
+	float:left;
+	width: 25%;
+	height: 25%;
+}
+
+.fb:hover
+{
+	background-color: #3b5998;
+}
+
+.yt
+{
+	float:left;
+	width: 25%;
+	height: 25%;
+}
+
+.yt:hover
+{
+	background-color: #ff0000;
+}
+
+.gplus
+{
+	float:left;
+	width: 25%;
+	height: 25%;
+}
+
+.gplus:hover
+{
+	background-color: CC3333;
+}
+
+.twitter
+{
+	float:left;
+	width: 25%;
+	height: 25%;
+}
+
+.twitter:hover
+{
+	background-color: #00acee;
+}
+
+.ending
+{
+	text-align: center;
+	font-size: 14px;
+	padding: 2px 0 2px 0;
+	background-color: gray;
+
+}
+
+
+}
+
+
+
+
+
+/*for phones 300px, vertical orientation*/
+@media only screen and (max-width: 500px) {
+* 
+{
+	padding: 0;
+	margin:0;
+}
+
+html
+{
+	width: 100%
+	height: 100%;
+}
+
+body
+{
+	/* Background pattern from Toptal Subtle Patterns */
+	background-image: url("img/hotel-wallpaper-black.png");
+	color: #ffffff;
+	margin: 0 auto !important; 
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;	
+	font-weight: 400;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+} 
+
+
+/*header-------*/
+header
+{
+	width: 100%; 
+	margin: 0;
+}
+
+.logo
+{
+	height: 20%;
+	position: relative;
+	width: 100%;
+}
+
+.logo img
+{
+	height: 100%;
+	width: 100%;
+}
+
+.logoh1
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	background:  rgba(0, 0, 0, 0.5);
+	letter-spacing: 0.3em;
+	padding: 0.5%;
+	border-radius: 5px;
+}
+
+h1
+{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	text-shadow:
+	0.1em 0.1em #103aa1;
+}
+
+#topnav
+{
+	width: 100%;
+	padding: 0.5% 0;
+	background-color: #426dd4;
+	text-align: center;
+	border-top: 0.2em solid #315cc3;
+	border-bottom: 0.2em solid #315cc3;
+}
+
+.menu /*które znajduje się w topnav czyli lista ul*/
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	display: inline-block; /*mówi aby elementy zachowywały się jak blok, wóczas te elemnty przyjmują text align center z nav*/
+}
+
+.menu a
+{
+	text-decoration: none;
+	color: #fff;
+	display: block; 
+	/*zachowuj się jak block, aby nadać szerokość, wyskość, w tym wypadku nadałam taką samą jak li*/	
+}
+
+.menu > li:hover /*dajemy li dlatego że kolor zmienia się jak najedziemy na li, niekoniecznie na hipełącze, hiperłącze to tak po drodze, dlatego ważne żeby też to hiperłącze miało odpowiednią wyskośc itd.*/
+{
+	background-color: #204bb2;
+}
+
+.menu > li:hover > a
+{
+	color: black;
+}
+
+.menu > li
+{
+	float: none;
+	width: 150px;
+	height: 30px;
+
+}
+
+
+
+.undermenu
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: none; /*schowaj liste*/
+}
+
+.menu > li:hover > .undermenu
+{
+	display: block;
+}
+
+.undermenu > li
+{
+	background-color: #537ee5;
+	position: relative;
+	z-index: 100;
+	border-top: 3px dashed #426dd4;
+}
+
+.undermenu > li:hover
+{
+	background-color: black;
+}
+
+.undermenu > li:hover > a
+{
+	color: #426dd4;
+}
+
+.undermenu > li > a:
+{
+	text-align: justify;
+}
+/*container---------*/
+.container
+{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.leftside
+{
+	float:left;
+	width: 85%;
+}
+
+	.article1
+	{
+		background-color: black;
+		padding: 3%;
+	}
+
+	.article1 img
+	{
+		float:left;
+		margin-right: 3%;
+	}
+
+	.article2
+	{
+		background-color: black;
+		border-top: 2px solid gray;
+	}
+	.nexttonaruto
+	{
+		text-align: justify;
+	}
+
+	p
+	{
+		margin: 0;
+	}
+
+	section
+	{
+		padding: 2%;
+	}
+
+	section img
+	{
+		float:left;
+		padding-right: 2%;
+		border-radius: 50px;
+	}
+
+	.content > p
+	{
+		margin: 0;
+	}
+	h2
+	{
+		margin: 0;
+		text-align: center;		
+	}
+
+	.cel
+	{
+		margin: 0;
+		text-align: center;
+		padding-bottom: 3%;
+		font-weight: 600;	
+	}
+
+.rightside
+{
+	display: none;
+}
+
+/*footer------*/
+footer
+{
+	background-color: black;
+	text-align: center;
+	border-top: 2px solid gray;
+	width: 100%;
+}
+
+.socials
+{
+	display: inline-block;
+	width: 80%;
+}
+
+.socials a
+{
+	text-decoration: none;
+	color: white;
+}
+
+.fb
+{
+	float:left;
+	width: 25%;
+	height: 25%;
+}
+
+.fb:hover
+{
+	background-color: #3b5998;
+}
+
+.yt
+{
+	float:left;
+	width: 25%;
+	height: 25%;
+}
+
+.yt:hover
+{
+	background-color: #ff0000;
+}
+
+
+.gplus
+{
+	float:left;
+	width: 25%;
+	height: 25%;
+}
+
+.gplus:hover
+{
+	background-color: CC3333;
+}
+
+.twitter
+{
+	float:left;
+	width: 25%;
+	height: 25%;
+}
+
+.twitter:hover
+{
+	background-color: #00acee;
+}
+
+.ending
+{
+	text-align: center;
+	font-size: 14px;
+	padding: 2px 0 2px 0;
+	background-color: gray;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
